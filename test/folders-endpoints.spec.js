@@ -3,7 +3,7 @@ const chai = require("chai");
 const jwt = require("jsonwebtoken");
 
 const db = require("../db/mongoose");
-const { TEST_MONGODB_URI, JWT_SECRET } = require("../config");
+const { TEST_MONGODATABASE_URI, JWT_SECRET } = require("../config");
 
 const User = require("../models/user");
 const Folder = require("../models/folder");
@@ -20,7 +20,7 @@ describe("Noteful API - Folders", function () {
   let token;
 
   before(function () {
-    return db.connect(TEST_MONGODB_URI)
+    return db.connect(TEST_MONGODATABASE_URI)
       .then(() => db.dropDatabase());
   });
 
