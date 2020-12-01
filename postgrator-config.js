@@ -20,10 +20,4 @@ module.exports = {
 
 
 
-
-//         MIGRATION_DATABASE_HOST=localhost
-//         MIGRATION_DATABASE_PORT=5432
-//         MIGRATION_DATABASE_NAME=noteful
-//         MIGRATION_DATABASE_USER=postgres
-//         MIGRATION_DATABASE_PASS=
-// 
+ 

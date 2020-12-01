@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require test/setup.js",
     "migrate": "postgrator --config postgrator-config.js",
     "migrate:production": "heroku run npm run migrate",
     "start": "node src/server.js",
